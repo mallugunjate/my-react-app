@@ -11,7 +11,9 @@ class Todos extends Component {
   render() {
     return(
       <div>
-        <h3>(this.props.todos)</h3>
+        this.props.todos.map((todo)=>(
+        <h3>(Todos.title)</h3>
+        ))
       </div>
     );
 }
