@@ -2,9 +2,10 @@ import React, { Component } from 'react';
 
 class Todos extends Component {
   render () {
-    return this.props.todos((todo)=>(
+    return (this.props.todos((todo)=>(
       <h3>(todo.title)</h3>    
-    ));
+    ))
+    );
   }
 }
 // function Todos() {
