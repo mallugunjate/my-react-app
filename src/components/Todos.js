@@ -23,5 +23,5 @@ class Todos extends Component {
 //     </div>
 //   );
 // }
-
+}
 export default Todos;
