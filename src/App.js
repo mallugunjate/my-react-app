@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Todos from './components/Todos'
 import './App.css';
 
-function App() {
+class App extends Component {
   state = {
     todos:[
       {
@@ -27,11 +27,22 @@ function App() {
       }
     ]
   }
-  return (
-    <div className="App">
-      <Todos todos={this.state.todos}/>
-    </div>
-  );
+  render() {
+    console.log(this.state.todos)
+    return(
+      <div className="App">
+        <Todos todos={this.state.todos}/>
+      </div>
+    );
+  }
 }
+// function App() {
+  
+//   return (
+//     <div className="App">
+//       <Todos todos={this.state.todos}/>
+//     </div>
+//   );
+// }
 
 export default App;
