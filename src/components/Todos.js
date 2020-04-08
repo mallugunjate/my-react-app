@@ -1,29 +1,17 @@
-import React, { Component } from 'react';
+import React, { Component, Children } from 'react';
 
 class Todos extends Component {
-  // render () {
-  //   return (this.props.todos((todo)=>(
-  //     <h3>(todo.title)</h3>    
-  //   ))
-  //   );
-  // }
-
-  render() {
-    return(
-      <div>
-        this.props.todos.map((todo)=>(
-        <h3>(Todos.title)</h3>
-        ))
-      </div>
-    );
-}
-// function Todos() {
-//   console.log(this.props.todos)
-//   return (
-//     <div>
-//       <h3>{this.props.todos.title}</h3>
-//     </div>
-//   );
-// }
+ render() {
+   var todoData = this.props;
+   return (
+     <div>
+       <ul>
+         {todoData.map(item=>
+          <li>{title}</li>
+          )}
+       </ul>
+     </div>
+   )
+ }
 }
 export default Todos;
