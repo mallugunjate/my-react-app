@@ -6,11 +6,12 @@ class Todos extends Component {
    
    return (
      <div>
+       <ul>
        {todoData.map(function(d, idx){
-         console.log(idx);
-         console.log(d.title);
          <li key={idx}>{d.title}</li>
        })}
+       </ul>>
+       
      </div>
    )
  }
