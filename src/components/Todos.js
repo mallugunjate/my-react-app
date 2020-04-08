@@ -2,16 +2,13 @@ import React, { Component, Children } from 'react';
 
 class Todos extends Component {
  render() {
-   var todoData = this.props;
+   const todoData = this.props;
    console.log(todoData);
    return (
      <div>
-       <ul>
-         {todoData.map(item=>
-          <li>{title}</li>
-
-          )}
-       </ul>
+       {todoData.map(function(d, idx){
+         return (<li key={idx}>{d.title}</li>)
+       })}
      </div>
    )
  }
