@@ -8,8 +8,6 @@ class App extends Component{
     state = {
 
         users:[
-          {name:"", age:null, isEditing:false},
-          {name:"", age:null, isEditing:false},
           {name:"", age:null, isEditing:false}
     
         ]
