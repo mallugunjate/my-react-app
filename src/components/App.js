@@ -8,9 +8,9 @@ class App extends Component{
     state = {
 
         users:[
-          {name:"Travis Jackson", age:18, isEditing:false},
-          {name:"Linda Moorhouse", age:22, isEditing:false},
-          {name:"Jeffrey Delgado", age:21, isEditing:false}
+          {name:"", age:, isEditing:false},
+          {name:"", age:, isEditing:false},
+          {name:"", age:, isEditing:false}
     
         ]
       }
