@@ -8,7 +8,7 @@ class App extends Component{
     state = {
 
         users:[
-          {name:"", age:null, isEditing:false}
+          {}
     
         ]
       }
